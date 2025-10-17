@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-TW">
+<head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb#">
+  <meta charset="UTF-8">
+  <title>LINE Add Friend</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta property="og:title" content="LINE Add Friend">
+  <meta property="og:image" content="https://page-share.line.me/@876jbnmq/global/og_image.png?ts=1760103233569">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,300,400,100,500" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      color: #444;
+    }
+    .qr-img {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      border: 1px solid #cdcdcd;
+    }
+    .text-large {
+      margin: 30px 0 16px;
+      font-size: 18px;
+    }
+    .text-small {
+      font-size: 13px;
+      color: #999;
+      line-height: 1.6em;
+    }
+    .link-list {
+      margin-top: 24px;
+    }
+    .link-list a {
+      color: #999;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    window.onload = function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const target = urlParams.get("url");
+
+      if (target && target.startsWith("http")) {
+        // 延遲 1500ms 自動跳轉
+        setTimeout(() => {
+          window.location.href = target;
+        }, 1500);
+      }
+    };
+  </script>
+</head>
+<body>
+
+  <div class="qr-img">
+    <img src="https://qr-official.line.me/gs/M_876jbnmq_GW.png?oat__id=5924092" alt="LINE QR Code" width="100%" height="100%">
+  </div>
+  <p class="text-large">透過 QR Code 添加 LINE 好友</p>
+  <p class="text-small">
+    請打開 LINE App 的「加入好友」功能，點選右上角的 QR Code 掃描，即可加入。
+  </p>
+  <div class="link-list">
+    <a href="https://line.me">了解更多 LINE</a>
+  </div>
+
+</body>
+</html>
